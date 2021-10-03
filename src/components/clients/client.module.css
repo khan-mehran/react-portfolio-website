@@ -1,0 +1,196 @@
+.clients{
+    background-color: #040221;
+    height: 1217px;
+    padding:104px 0;
+}
+.clients_heading{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+.clients_heading h3{
+    display: flex;
+    justify-content:center;
+    margin:0;
+    color:white;
+    font-size:60px;
+    font-weight: 600;
+}
+
+.clients_heading span{
+    align-items:center;
+    display: flex;
+    justify-content:center;
+    width:20%;
+    margin-top:30px;
+    border-bottom: 3px solid #FF0513;
+}
+.clients_heading p{
+    font-size:30px;
+    color:white;
+    text-align:center;
+}
+.clients_wrapper{
+    display:flex;
+    padding: 150px 0 0 0;
+    width:100%;
+}
+.clients_img{
+    width:50%;
+    position: relative;
+}
+.map{
+    width:100%;
+}
+.client_one{
+    position: absolute;
+    top: 0;
+}
+.client_two{
+    position: absolute;
+    left: 90px;
+    top: 220px;
+}
+.client_three{
+    position: absolute;
+    left: 220px;
+    top: 370px;
+}
+.client_four{
+    position: absolute;
+    left: 220px;
+    width:90px;
+    top: 130px;
+}
+.client_five{
+    position: absolute;
+    left: 510px;
+    width:140px;
+    top: 0;
+}
+.client_six{
+    position: absolute;
+    left: 520px;
+    width:90px;
+    top: 270px;
+}
+.clients_text{
+    width:50%;
+    color:white;
+    font-size:30px;
+    padding-top: 90px;
+    position: relative;
+}
+.upper_qoute{
+    position: absolute;
+    top: 0;
+}
+.lower_qoute{
+    position: absolute;
+    top: 260px;
+    left:500px;
+    right: 0;
+}
+.sara span{
+    font-size:30px;
+}
+.sara p{
+    font-size:22px;
+}
+
+@media only screen and (max-width:1366px) {
+    .clients{
+        background-color: #040221;
+        height: 750px;
+    }
+    .clients_wrapper{
+        display:flex;
+        padding: 70px 0 0 0;
+        width:100%;
+    }
+    .clients_heading h3{
+        display: flex;
+        justify-content:center;
+        margin:0;
+        color:white;
+        font-size: 40px;
+        font-weight: 500;
+    }
+    
+    .clients_heading span{
+        align-items:center;
+        display: flex;
+        justify-content:center;
+        width:15%;
+        margin-top:20px;
+        border-bottom: 2px solid #FF0513;
+    }
+    .clients_heading p{
+        font-size:18px;
+        color:white;
+        text-align:center;
+    }
+    .client_one{
+        position: absolute;
+        width:100px;
+        top: 0;
+    }
+    .client_two{
+        position: absolute;
+        width:65px;
+        left: 20px;
+        top: 140px;
+    }
+    .client_three{
+        position: absolute;
+        left: 120px;
+        width:100px;
+        top: 210px;
+    }
+    .client_four{
+        position: absolute;
+        left: 160px;
+        width:65px;
+        top: 60px;
+    }
+    .client_five{
+        position: absolute;
+        left: 280px;
+        width:100px;
+        top: 0;
+    }
+    .client_six{
+        position: absolute;
+        left: 280px;
+        width:65px;
+        top: 210px;
+    }
+    .clients_text{
+        width:50%;
+        color:white;
+        font-size:18px;
+        position: relative;
+    }
+    .upper_qoute{
+        position: absolute;
+        width:60px;
+    }
+    .lower_qoute{
+        position: absolute;
+        width: 60px;
+        top: 170px;
+        left:200px;
+        right: 0;
+    }
+    .sara{
+        margin-top:50px;
+        font-size:15px;
+    }
+    .sara span{
+        font-size:22px;
+        font-weight: 600;
+    }
+   
+    
+}

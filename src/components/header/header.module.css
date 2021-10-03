@@ -1,0 +1,70 @@
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_img{
+    width:265px;
+    height:137px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    padding: 70px 35px 35px 35px;
+}
+.navbar button{
+    background: transparent;
+    color: white;
+    border: 2px solid;
+    font-size: 22px;
+    padding: 24px 40px;
+    border-radius: 60px;
+}
+.navbar button:hover{
+    background-color: #FF0513;
+    border: 2px solid transparent;
+    color: white;
+}
+.navbar ul li a:hover{
+    background-color: #FF0513;
+    transition: all 0.8s ease;
+}
+.navbar ul li:last-child a:hover{
+    background-color: transparent;
+}
+
+@media only screen and (max-width:1366px) {
+    .logo_img{
+        width: 150px;
+        height: 70px;
+    }
+    .navbar a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        padding: 40px 25px 25px 25px;
+    }
+    .navbar button{
+        background: transparent;
+        color: white;
+        border: 1px solid;
+        font-size: 15px;
+        padding: 15px 25px;
+        border-radius: 40px;
+    }
+    .navbar button:hover{
+        background-color: #FF0513;
+        border: 1px solid transparent;
+        transition: all 0.8s ease;
+        color: white;
+    }
+}
+

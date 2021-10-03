@@ -1,0 +1,78 @@
+.cap{
+    background-color: #0e0c38;
+    height: 1417px;
+    padding:84px 0;
+}
+.cap_heading{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+.cap_heading h3{
+    display: flex;
+    justify-content:center;
+    margin:0;
+    color:white;
+    font-size:60px;
+    font-weight: 600;
+}
+
+.cap_heading span{
+    align-items:center;
+    display: flex;
+    justify-content:center;
+    width:20%;
+    margin-top:30px;
+    border-bottom: 3px solid #FF0513;
+}
+.cap_heading p{
+    font-size:30px;
+    color:white;
+    text-align:center;
+}
+.WebCard_wrapper{
+        margin: 104px 0 50px 0;
+}
+.WebCard{
+    width:100%;
+    margin-bottom: 174px;
+    justify-content:space-between;
+    display: flex;
+    color:white;
+}
+@media only screen and (max-width:1366px){
+    .cap{
+        background-color: #0e0c38;
+        height: 1070px;
+        padding:84px 0;
+    }
+    .cap_heading h3{
+        display: flex;
+        justify-content:center;
+        margin:0;
+        color:white;
+        font-size:40px;
+        font-weight: 500;
+    }
+    .cap_heading span{
+        align-items:center;
+        display: flex;
+        justify-content:center;
+        width: 15%;
+        margin-top:20px;
+        border-bottom: 2px solid #FF0513;
+    }
+    .cap_heading p{
+        font-size:18px;
+        color:white;
+        text-align:center;
+    }
+    .WebCard{
+        width:100%;
+        margin-bottom: 104px;
+        justify-content:space-between;
+        display: flex;
+        color:white;
+    }
+}
