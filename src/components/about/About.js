@@ -3,7 +3,7 @@ import styles from './about.module.css'
 
 const About = () => {
     return (
-        <div className={styles.about} id={styles.abou_me}>
+        <div className={styles.about} id='about'>
             <div className='container'>
                 <div className={styles.about_wrapper}>
                         <div className={styles.about_content}>
@@ -13,7 +13,7 @@ const About = () => {
                                 </div>
                                 <div className={styles.h2_border}>
                                     <p>___________________________________</p>
-                                </div>
+                               </div>
                             </div>
                            <div className={styles.about_para}>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 

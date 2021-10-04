@@ -1,12 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from '../card/Card'
 import styles from './portfolio.module.css'
 
 const Portfolio = () => {
-
+    const [cards, setCards] = useState('all')
+    const all =[
+        '/images/abad.png','/images/bane.png','/images/apri.png',
+        '/images/v1.png','/images/nalie.png','/images/bane.png'
+    ]
+    const logo = [
+        '/images/v1.png','/images/nalie.png','/images/bane.png'
+    ]
+    const website = [
+        '/images/v1.png','/images/nalie.png','/images/abad.png'
+    ]
+    const app = [
+        '/images/v1.png'
+    ]
     
     return (
-        <div className={styles.portfolio}>
+        <div className={styles.portfolio} id='portfolio'>
             <div className='container'>
                 <div className={styles.portfolio_wrapper}>
                     <div className={styles.portfolio_content}>
@@ -20,43 +33,63 @@ const Portfolio = () => {
                 <div className={styles.portfolio_nav}>
                     <ul>
                         <li>
-                            <button> All</button>
-                            {/* <button class="tablinks" onclick="openCity(event, 'London')">London</button> */}
+                            <button onClick={() =>{setCards('all')}}> All</button>
                         </li>
                         <li>
-                            <button> Logo</button>
+                            <button onClick={() =>{setCards('logo')}}> Logo</button>
                         </li>
                         <li>
-                            <button> Webistes</button>
+                            <button onClick={() => {setCards('website')}}> Webistes</button>
                         </li>
                         <li>
-                            <button> Mobile Apps</button>
+                            <button onClick={() => {setCards('app')}}> Mobile Apps</button>
                         </li>
                     </ul>
                 </div>
                 <di id='all' className='tabcontent'>
                     <div className={styles.cards}>
-                        <div className={styles.cards_img}>
-                            <Card img='/images/abad.png'/>
-                        </div>
-                        <div className={styles.cards_img}>
-                            <Card img='/images/bane.png'/>
-                        </div>
-                        <div className={styles.cards_img}>
-                            <Card img='/images/apri.png'/>
-                        </div>
+                        {
+                           cards=='all' && all.map((item)=>{
+                                return(
+                                    <div className={styles.cards_img}>
+                                    <Card img={item}/>
+                                </div>
+                                )
+                            })
+                            
+                        }
+                         {
+                           cards=='logo' && logo.map((item)=>{
+                                return(
+                                    <div className={styles.cards_img}>
+                                    <Card img={item}/>
+                                </div>
+                                )
+                            })
+                            
+                        }
+                        {
+                           cards=='website' && website.map((item)=>{
+                                return(
+                                    <div className={styles.cards_img}>
+                                    <Card img={item}/>
+                                </div>
+                                )
+                            })
+                            
+                        }
+                          {
+                           cards=='app' && app.map((item)=>{
+                                return(
+                                    <div className={styles.cards_img}>
+                                    <Card img={item}/>
+                                </div>
+                                )
+                            })
+                            
+                        }
                     </div>  
-                    <div className={styles.cards}>
-                        <div className={styles.cards_img}>
-                            <Card img='/images/v1.png'/>
-                        </div>
-                        <div className={styles.cards_img}>
-                            <Card img='/images/nalie.png'/>
-                        </div>
-                        <div className={styles.cards_img}>
-                            <Card img='/images/bane.png'/>
-                        </div>
-                    </div> 
+                   
                 </di> 
             </div>
         </div>

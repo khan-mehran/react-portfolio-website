@@ -17,7 +17,8 @@ const Hero = () => {
                             Reccardo</h1>
                         <p>A young <span> UI/UX </span> designer with crazy for mobile & web design.</p>
                         <p>Find Me on</p>
-                        <button>Hire Me</button><button>Portfolio</button>
+                        <a href='#contact'><button>Hire Me</button></a>
+                        <a href='#portfolio'><button>Portfolio</button></a>
                     </div>
                     <div className={styles.hero_img}>
                         <img src={'/images/hero_img.png'} />

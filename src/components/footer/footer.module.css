@@ -51,6 +51,9 @@
         color: white;
         padding: 0 10px;
     }
+    .footer_nav a:hover{
+        color: #FF0513;
+    }
     .footer p{
         font-size:15px;
         color: white;

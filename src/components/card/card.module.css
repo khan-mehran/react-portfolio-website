@@ -1,0 +1,46 @@
+.portfolio_card{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 35px;
+    transition:  all .3s ease-in;
+    margin-bottom: 60px;
+    /* margin:0 auto; */
+}
+
+.portfolio_card:hover{
+        transform: scaleY(1.1);
+        transform-origin:bottom;
+    }
+
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; 
+        background-color: red;
+        color:white;
+        opacity: 0;
+        transition:  all .3s ease-in;
+    }
+        .overlay:hover{
+            display: block;
+            opacity: .8;
+        }
+
+        .overlay_content{
+            position: absolute;
+            left: 10px;
+            bottom: 20px;
+        }
+            .overlay h2{
+                font-size: 44px;
+                max-width: 230px;
+            }
+         
+            .overlay p{
+                font-size: 25px;
+                margin-top: 17px;
+            }
+    

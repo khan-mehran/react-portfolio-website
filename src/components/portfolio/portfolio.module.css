@@ -108,6 +108,15 @@
         color: white;
         padding-right: 30px;
     }
+    .portfolio_nav button:active{
+        color: #FF0513;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
     .cards_img{
         width: 30%;
     }
