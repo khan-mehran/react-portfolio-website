@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styles from './header.module.css'
 
 const Header = () => {
@@ -7,7 +6,7 @@ const Header = () => {
         
             <div className={styles.header}>
                 <div className={styles.logo}>
-                    <img src={'/images/logo.png'} className={styles.logo_img} />
+                    <img src={'/images/logo.png'} alt='logo' className={styles.logo_img} />
                 </div>
                 <div className={styles.navbar}>
                     <nav>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styles from './footer.module.css'
 
 const Footer = () => {
@@ -7,7 +6,7 @@ const Footer = () => {
         <div className={styles.footer}>
             <div className='container'>
             <div className={styles.footer_logo}>
-                    <img src={'/images/logo.png'} className={styles.logo} />
+                    <img src={'/images/logo.png'} alt='logo' className={styles.logo} />
                 </div>
                 <div className={styles.footer_nav}>
                     <nav>

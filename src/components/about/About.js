@@ -28,7 +28,7 @@ const About = () => {
                             
                         </div>
                         <div className={styles.img_wrapper}>
-                            <img src={'/images/about.png'} className={styles.about_img} />
+                            <img src={'/images/about.png'} alt='about' className={styles.about_img} />
                         </div>
                 </div>
             </div>

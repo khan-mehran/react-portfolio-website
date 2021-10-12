@@ -9,7 +9,7 @@ const Card = ({img}) => {
         // </div>
         <div className={styles.portfolio_card}>
         <div>
-            <img src={img}></img>
+            <img src={img} alt='cards'></img>
         </div>
         <div className={styles.overlay}>
             <div className={styles.overlay_content}>

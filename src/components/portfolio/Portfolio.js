@@ -36,7 +36,7 @@ const Portfolio = () => {
                             <button onClick={() =>{setCards('all')}}> All</button>
                         </li>
                         <li>
-                            <button onClick={() =>{setCards('logo')}}> Logo</button>
+                            <button onClick={() =>{setCards('logo')}} > Logo</button>
                         </li>
                         <li>
                             <button onClick={() => {setCards('website')}}> Webistes</button>
@@ -49,7 +49,7 @@ const Portfolio = () => {
                 <di id='all' className='tabcontent'>
                     <div className={styles.cards}>
                         {
-                           cards=='all' && all.map((item)=>{
+                           cards==='all' && all.map((item)=>{
                                 return(
                                     <div className={styles.cards_img}>
                                     <Card img={item}/>
@@ -59,7 +59,7 @@ const Portfolio = () => {
                             
                         }
                          {
-                           cards=='logo' && logo.map((item)=>{
+                           cards==='logo' && logo.map((item)=>{
                                 return(
                                     <div className={styles.cards_img}>
                                     <Card img={item}/>
@@ -69,7 +69,7 @@ const Portfolio = () => {
                             
                         }
                         {
-                           cards=='website' && website.map((item)=>{
+                           cards==='website' && website.map((item)=>{
                                 return(
                                     <div className={styles.cards_img}>
                                     <Card img={item}/>
@@ -79,7 +79,7 @@ const Portfolio = () => {
                             
                         }
                           {
-                           cards=='app' && app.map((item)=>{
+                           cards==='app' && app.map((item)=>{
                                 return(
                                     <div className={styles.cards_img}>
                                     <Card img={item}/>

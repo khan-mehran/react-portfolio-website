@@ -108,7 +108,7 @@
         color: white;
         padding-right: 30px;
     }
-    .portfolio_nav button:active{
+    .active{
         color: #FF0513;
     }
     .cards{
